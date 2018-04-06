@@ -3,7 +3,6 @@ using System.Collections;
 
 public class bullet : MonoBehaviour {
 
-
 	public int lifeSpan = 100;
 	// Use this for initialization
 	void Start () {

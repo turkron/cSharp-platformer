@@ -26,7 +26,7 @@ public class RespawnPoint : MonoBehaviour {
 				}
 			}
 				
-			parentClass.respawnPoint = whatHit.gameObject;
+			parentClass.respawnPoint = this.gameObject;
 			this.gameObject.GetComponent<BoxCollider2D> ().enabled = false;
 			this.gameObject.GetComponent<Renderer> ().material.color = Color.black;
 		}
