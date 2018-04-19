@@ -73,6 +73,7 @@
      <Compile Include="Assets\Script\RightDetector.cs" />
      <Compile Include="Assets\Script\weaponHandling.cs" />
      <Compile Include="Assets\Script\weaponPickUp.cs" />
+     <Compile Include="Assets\trackObject.cs" />
      <None Include="Assets\log list.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

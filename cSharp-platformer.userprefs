@@ -6,20 +6,17 @@
       <File FileName="Assets\playerManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\RespawnPoint.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\weaponHandling.cs" Line="1" Column="1" />
-      <File FileName="Assets\contactKill.cs" Line="17" Column="2" />
+      <File FileName="Assets\contactKill.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\PickUp.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\weaponPickUp.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\jumpPowerUp.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\bullet.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\LeftDetector.cs" Line="1" Column="1" />
       <File FileName="Assets\lift.cs" Line="1" Column="1" />
       <File FileName="Assets\childBinder.cs" Line="1" Column="1" />
-      <File FileName="Assets\itemToPickUp.cs" Line="6" Column="2" />
-      <File FileName="Assets\door.cs" Line="27" Column="2" />
-      <File FileName="Assets\delayedFall.cs" Line="9" Column="32" />
-      <File FileName="Assets\resetAfterDelay.cs" Line="16" Column="36" />
-      <File FileName="Assets\rangeDetection.cs" Line="19" Column="37" />
+      <File FileName="Assets\door.cs" Line="1" Column="1" />
+      <File FileName="Assets\resetAfterDelay.cs" Line="22" Column="3" />
+      <File FileName="Assets\delayedFall.cs" Line="21" Column="39" />
+      <File FileName="Assets\rangeDetection.cs" Line="42" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

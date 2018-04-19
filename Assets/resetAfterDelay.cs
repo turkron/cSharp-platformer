@@ -18,8 +18,6 @@ public class resetAfterDelay : MonoBehaviour {
 		
 	}
 
-
-
 	public IEnumerator startRespawning(){
 		float startTime = Time.time;
 		while(Time.time < startTime + overTime){
