@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rangeDetection : MonoBehaviour {
+public class pulseRangeDetection : MonoBehaviour {
 
 	public string targetTag;
 	public float scanDelayTime = 10f;
@@ -37,24 +37,27 @@ public class rangeDetection : MonoBehaviour {
 	IEnumerator scanOverTime(){
 		Debug.Log ("scan Started");
 		float startTime = Time.time;
-		while(Time.time < startTime + scanDuration ||  scanForTarget (currentScanRange) == false){
-			currentScanRange += scanIncrement;
-			yield return scanForTarget (currentScanRange);
+		while(Time.time < startTime + scanDuration){
+			if(scanForTarget (currentScanRange) == null){
+				currentScanRange += scanIncrement;
+				yield return null;
+			} else {
+				break;
+			}
 		}
-		Debug.Log ("passed the conditions because : "+ (Time.time < startTime + scanDuration)+ (!scanForTarget (currentScanRange)));
 		currentScanRange = 0;
 	}
 
 
-	bool scanForTarget(float scanRange){
+	GameObject scanForTarget(float scanRange){
 		
-		bool toReturn = false;
+		GameObject toReturn = null;
 		var hitColliders = Physics2D.OverlapCircleAll (this.gameObject.transform.position, scanRange);
 		foreach (Collider2D obj in hitColliders) {
 			if (obj.GetType() == typeof(BoxCollider2D)) {
 				if (obj.gameObject.tag == "Player") {
 					Debug.Log ("FOUND TARGET");
-					toReturn = true;
+					toReturn = obj.gameObject;
 				}
 			}
 		}

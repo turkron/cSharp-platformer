@@ -51,15 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\castDebugRay.cs" />
      <Compile Include="Assets\childBinder.cs" />
      <Compile Include="Assets\Climb.cs" />
      <Compile Include="Assets\contactKill.cs" />
      <Compile Include="Assets\delayedFall.cs" />
      <Compile Include="Assets\door.cs" />
+     <Compile Include="Assets\enemySight.cs" />
      <Compile Include="Assets\itemToPickUp.cs" />
      <Compile Include="Assets\lift.cs" />
      <Compile Include="Assets\playerManager.cs" />
-     <Compile Include="Assets\rangeDetection.cs" />
+     <Compile Include="Assets\pulseRangeDetection.cs" />
      <Compile Include="Assets\resetAfterDelay.cs" />
      <Compile Include="Assets\Script\bottomDetector.cs" />
      <Compile Include="Assets\Script\bullet.cs" />
